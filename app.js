@@ -180,8 +180,8 @@ let mixed = [4, '2', 5, '8', '9', 0, 1];
 for (let i = 0; i < mixed.length; i++){
   let element = mixed[i];
 
-  if (typeof element ==='numbers' && element % 2 === 0);{
-    console.log('even')
+  if (typeof element ==='number' && element % 2 === 0) {
+    console.log('even');
   }
 }
 
@@ -189,8 +189,8 @@ for (let i = 0; i < mixed.length; i++){
 for (let i = 0; i < mixed.length; i++){
   let element = mixed[i];
 
-  if (typeof element ==='numbers' && element % 2 === 1);{
-    console.log('odd')
+  if (typeof element ==='number' && element % 2 === 1) {
+    console.log('odd');
   }
 }
 
@@ -198,7 +198,7 @@ for (let i = 0; i < mixed.length; i++){
 for (let i = 0; i < mixed.length; i++){
   let element = mixed[i];
 
-  if (typeof element ==='string');{
-    console.log('not number')
+  if (typeof element ==='string') {
+    console.log('not number');
   }
 }
