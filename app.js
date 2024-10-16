@@ -2,15 +2,14 @@
 
 // Q1
 let nickname = 'ごっしー';
-let age = '28';
+let age = 28;
 let greet = '私のニックネームは' + nickname + 'です。年齢は'  + age + 'です。';
 console.log(greet);
 
 
 // Q2
 let languages = ['JavaScript', 'PHP', 'RUdy', 'Python', 'Go'];
-
-console.log('私の好きな言語は' + languages[0] + 'です。次は' + languages[3] + 'を勉強してみたいです。');
+console.log(`私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです。`);
 
 
 // Q3
@@ -45,7 +44,11 @@ console.log(playerList[1].favorites[1])
 
 
 // Q5
-console.log((playerList[0].age + playerList[1].age + playerList[2].age) / playerList.length)
+let sum = 0;
+for (let i = 0; i < playerList.length; i++) {
+  sum += playerList[i].age;
+}
+console.log(sum / playerList.length);
 
 
 // Q6
@@ -95,8 +98,6 @@ let calc = {
     console.log(x / y);
   }
 };
-
-
 
 calc.add(3,4);
 calc.subtract(11,1);
@@ -148,10 +149,12 @@ else {
 
 // Q4
 let numbers = [];
+
 for (let i = 0; i < 100; i++) {
-  console.log(i);
+  numbers.push(i);
 }
 
+console.log(numbers);
 
 // Q5
 let mixed = [4, '2', 5, '8', '9', 0, 1];
